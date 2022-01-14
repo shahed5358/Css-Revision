@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .first-heading {
+            color: darkorange;
+        }
+
+        #third {
+            color: darkorchid;
+        }
+
+        h1 {
+            color: red;
+            background-color: chartreuse;
+        }
+
+        h1 {
+            color: green;
+            background-color: coral;
+        }
+
+        h1 {
+            color: blue !important;
+            background-color: cyan;
+        }
+
+        p {
+            border: 2px dashed green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1000</h3>
+    <h3>0001</h3>
+    <h1 class="first-heading">My heading number - 1</h1>
+    <h1 class="first-heading">My heading number - 2</h1>
+    <h1 id="third" class="first-heading" style="color:brown">My heading number - 3</h1>
+    <h1 class="first-heading">My heading number - 4</h1>
+
+    <p>This is my description -1</p>
+    <p>This is my description -2</p>
+    <p>This is my description -3</p>
+    <p>This is my description -4</p>
+    <p>This is my description -5</p>
+</body>
+
+</html>
